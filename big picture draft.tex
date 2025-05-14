@@ -1,0 +1,27 @@
+\documentclass[man]{apa7}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+
+\title{Big Picture Draft: Neural Representation of Social Interaction}
+\author{}
+\affiliation{}
+
+\begin{document}
+
+\section{Big Picture Draft}
+
+In everyday life, we constantly observe others engaging in social interactions. What is represented in the brain when we view these interactions? This question lies at the heart of social cognitive neuroscience, with broad implications for theories of social perception and communication.
+
+Recent research has shown that social interactions are processed hierarchically in the brain (McMahon et al., 2023), from low-level features such as agent distance to higher-level features like communication, along a pathway from the extrastriate body area (EBA) to the posterior superior temporal sulcus (pSTS). However, much of this work relies on human annotation, limiting the scalability and dimensional richness of explored features.
+
+To address this limitation, the present study leverages deep neural networks for automated semantic annotation, providing a scalable and interpretable approach to linking brain activity with structured features of social interaction. Using a naturalistic dataset comprising fMRI recordings from four participants watching 250 muted 3-second dyadic interaction videos, we generate similarity-based annotations with CLIP, a multi-modal model that encodes both visual and textual representations into a shared embedding space. We then assess the correspondence between video-derived features and brain activity patterns through representational similarity analysis.
+
+Our findings indicate that CLIP-derived annotations exhibit high consistency with human ratings across several theoretical dimensions, suggesting that the model effectively captures meaningful aspects of social interaction. Compared to embeddings from visual-only models such as ResNet, CLIP embeddings demonstrate stronger and more widespread neural correlations. Moreover, dimension-specific annotations reveal fine-grained neural tuning, with features such as Transitivity and Context correlating with specialized regions including the EBA, pSTS, and fusiform face area (FFA).
+
+These results demonstrate that deep learning-based annotation enables scalable, hypothesis-driven decoding of complex social representations in the brain. This approach builds upon and extends prior manual annotation methods, offering a more efficient and flexible framework for analyzing rich, naturalistic stimuli.
+
+Nonetheless, limitations remain. The small sample size restricts generalizability, and some analytic pathways may introduce recursive structures due to reliance on similarity metrics, although such practice is common in RSA research. Additionally, while machine-generated annotations demonstrate scalability, future work may benefit from more systematic human validation.
+
+Overall, this project offers a promising framework for bridging computational analysis with neuroimaging to advance our understanding of how the brain encodes complex social information at scale.
+
+\end{document}
